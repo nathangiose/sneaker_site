@@ -1,0 +1,40 @@
+contact-form {
+    position: absolute;
+    right: 0;
+    top: -35px;
+    z-index: -1;
+    margin-top: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.contact-input {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input {
+    height: 45px;
+}
+
+.button {
+   background: transparent;
+   color: #ed2d34;
+border-color: #ed2d34;
+font-size: 20px;
+font-weight: inherit;
+letter-spacing: 2px;
+height: 50px;
+margin-top: 20px;
+border-radius: 50px;
+}
+
+.button:hover {
+    background-color: #ed2d34 !important;
+    color: #ffffff !important;
+}
+

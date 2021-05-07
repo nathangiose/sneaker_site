@@ -1,0 +1,276 @@
+/* CSS RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* Page Container Styles */
+
+.content {
+  width: 100%;
+  height: 100%;
+  margin-left: 60px;
+}
+
+/* Navigation Tooltip Styling */
+
+#fp-nav ul li .fp-tooltip {
+  color: white;
+  background-color: #222;
+  padding: 10px;
+}
+
+/* Navigation Styling */
+
+#fp-nav.fp-left {
+  background-color: #ed2d34;
+  left: 0;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  width: 60px;
+}
+
+/* Product Page Styling, needed for modal */
+
+#productPage {
+  position: relative;
+}
+
+/* Coloring the navbar icons white */
+
+#fp-nav ul li a span,
+#fp-nav ul li a.active span {
+  background-color: white;
+  color: black;
+}
+
+/* Hide title and buttons */
+
+#product-slider h3,
+#product-slider button {
+  display: none;
+}
+
+/* Product slider active item setting */
+/* 
+#product-slider .active h3,
+#product-slider .active button {
+  display: block;
+} */
+
+#product-slider .active + .owl-item h3,
+#product-slider .active + .owl-item button {
+  display: block;
+}
+
+/* Modal Styling */
+
+#modal {
+  display: none;
+}
+
+#modal.modal-active {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  z-index: 100;
+  width: 50vw;
+  height: 50vh;
+  transform: translate(-50%, -50%);
+}
+
+/* Used to prevent the carousel from stretching the screen */
+
+.owl-carousel {
+  overflow: hidden;
+}
+
+/* Used to scale down the home image. You can remove this. */
+
+img {
+  max-width: 40vw;
+}
+
+/* PLEASE START YOUR STYLES UNDERNEATH THIS */
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+body {
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  font-family: sans-serif;
+}
+
+#homePage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-details {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-self: center;
+  margin: 50px;
+  width: 100%;
+  padding: 15px 15px;
+  gap: 20px;
+}
+
+.home-details p {
+  font-size: 19px;
+  color: #464646;
+}
+
+
+.title-font {
+  margin: 0px 0px 8px;
+}
+
+.sneaker-1 {
+  max-width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-content: center;
+  margin-right: 50px;
+  margin-bottom: 10%;
+}
+
+.btn-1 {
+  text-decoration: none;
+  background-color: transparent;
+  color: black;
+  padding: 10px 48px;
+  border-radius: 50px;
+  /* margin: 15px; */
+  align-items: center;
+  border: 3px solid black;
+ line-height: 1.8em;
+ font-size: 16px;
+  width: fit-content;
+}
+
+.btn-text {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.btn-1:hover {
+  background-color: #ed2d34;
+  color: white;
+}
+
+.air {
+  display: flex;
+  flex-direction: column;
+  color: #ed2d34;
+  margin-top: 5px;
+}
+
+.home-heading {
+  font-size: 50px;
+}
+
+.home-heading p {
+  margin-left: 25px;
+  font-size: 25px;
+}
+
+.icons {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.icon-group i {
+  border-radius: 50%;
+  margin-right: 5px;
+  padding: 15px;
+}
+
+.icon-group i:hover {
+  background-color: #ed2d34;
+  color: white;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 15px 15px; */
+}
+
+.number-stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-group {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+
+.stat-group span {
+  font-size: 30px;
+  align-self: center;
+  margin-bottom: 5px;
+}
+
+.page-heading {
+  font-size: 35px;
+  margin-bottom: 2px;
+  color: #464646;
+}
+
+.page-subtitle {
+  font-size: 35px;
+  color: #ed2d34;
+}
+
+/* .owl-carousel .owl-item img {
+  height: auto;
+  object-fit: cover;
+  border-radius: 200px;
+  align-self: center;
+  margin: 30px;
+} */
+
+#productPage {
+  padding: 10%;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* width: -moz-fit-content; */
+}
+
+.product img {
+  height: 300px !important;
+  width: 300px !important;
+  object-fit: contain !important;
+}
+
+
+
